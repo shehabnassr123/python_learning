@@ -71,6 +71,101 @@ print(d.upper())
 
 print(d.lower())
 
+#  split, rsplit(separator , maxsplit) بيقسم النص من اليمين واليسار علي حسب البراميتر اللي محطوط 
+f = "shehab nasser ahmed"
+
+print(f.split(" ",1))
+print(f.rsplit(" "))
+
+# center (width,fillchar )  بيوسطن النص من اليمين واليسار وبيحط من اليمين واليسار حروف او علامه انا بحددها 
+
+j="shehab nasser"
+
+print(j.center(12,"*"))
+
+# count() تحسب عدد مرات ظهور جزء معيّن (حرف أو كلمة) داخل النص.
+
+
+
+print(j.count("s",1,10))
+
+# swapcase()  بتعكس الحروف الحرف الكبير تخليه صغير والعكس
+
+print(j.swapcase())
+
+# stratswith(prefix , start,end) and endswith بتخليك تتشك علي الكلامات بداية الجمله 
+
+print(j.startswith("she",0,4))
+
+print(j.startswith("s",0,1))
+
+#  index (substring ,strat ,end )دا بيحددلك رقم ال index داخل string
+print(j.index("s"))
+
+#  find  (substring ,strat ,end )دا بيحددلك رقم ال index داخل string   بتدور بامان 
+
+print(j.find("h"))
+
+# ljust and rjust <<< center  الفرق بينهم واضح ي لفت 
+
+k = "amany"
+print(k.center(10,"#"))
+print(k.ljust(10,"!"))
+print(k.rjust(10,"'"))
+
+# splitlines  بتقسم لما بتلاقي اي escape وبيطلعهم في شكل list
+
+g= "shehab\nnasser\nahmed\thedve"
+
+print(g.splitlines())
+#  expandtabs بتخليك تحدد عدد المسافات في استرنج مستخدم \t
+
+print(g.expandtabs(10))
+
+one ="I Love You Mohammed 3S"
+
+print(one.istitle())
+print(one.isspace())
+print(one.islower())
+print(one.isupper())
+
+two = "shehab112"
+
+print(two.isidentifier())
+print(two.isalpha())
+print(two.isalnum())
+
+
+sh = """ shehab \nnasser ahmed\tmostafa"""
+
+print(sh.istitle())
+print(sh.isalpha())
+print(sh.isspace())
+print(sh.isalnum())
+print(sh.isidentifier())
+print(sh.islower())
+print(sh.isupper())
+# =============================
+sentence = "This is bad, really bad, very bad"
+
+print(sentence.replace("bad","good",1))
+
+# +++++++++++++++++++++++
+words = ["I", "love", "Python"]
+print("#".join(words))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
